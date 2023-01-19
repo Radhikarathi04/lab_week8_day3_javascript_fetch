@@ -14,6 +14,7 @@ const getCountryByName = (countryName) => {
         let country = data[0];
         let section = document.getElementById("countries");
         let name = document.createElement("h3");
+        // using .common to access the common property of name on the country object
         name.innerHTML = `Country name: ${country.name.common}`;
         // connecting DOM elements with appendchild
         section.appendChild(name);
